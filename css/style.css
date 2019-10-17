@@ -1,18 +1,164 @@
+/* ------------------head начало-------------------- */
 .logo {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   float: left;
-  margin-left: 150px;
+  margin-left: 15%;
 }
+            /* ------кнопки в head начало------ */
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
-  margin-left: 45%;
+  margin-left: 50%;
+  margin-right: 5%;
 }
 .item {
   padding: 20px 0px;
 }
+              /* ------кнопки в head конец------ */
+/* -----------------head end------------------ */
+/* ------------------начало слайдера------------------- */
+.single-slide {
+  background-image: url(../img/slider-backgound.png);
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+.iphone {
+  position: absolute;
+  z-index: 1;
+  margin-left: 22vw;
+  margin-top: 3vh;
+}
+.sl-slider {
+  height: 450px;
+  max-width: 3500px;
+  margin-left: 45vw;
+}
+.text-slider {
+  margin-top: 15vh;
+}
+.big-text-slider{
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  color: #ffffff;
+}
+.smal-text-slider {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 50;
+  color: #ffffff;
+}
+          /* ----- button sing un now start------ */
+.button a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid #5094f2;
+  /* border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082); */
+  border-image-slice: 1;
+  margin: 10px 0px;   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+}
 
-https: ; //developer.mozilla.org/ru/docs/Web/CSS/CSS_Flexible_Box_Layout/%D0%92%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2_%D0%B2_Flex_%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B5
+.button a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: #5094f2;
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+}
+a:hover {background: rgba(255,255,255,0);}
+a:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+            /* ----- button sing un now end------ */
+
+.middle-block {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0px 200px 0px;
+}
+.middle-block img {
+  display: block;
+  margin: 25% auto;
+}
+.m-block-blue, .m-block-red, .m-block-yellow  {
+  border-radius: 50%;
+  height: 185px;
+  width: 185px;
+  z-index: 9;
+}
+.m-block-blue {
+  background-color: #5094f2; 
+}
+.m-block-red {
+  background-color: #d94748;
+}
+.m-block-yellow {
+  background-color: #ebbb11;
+}
+.middle-block span {
+  font-size: 20px;
+  line-height: 44px;
+  color: #5094f2;
+  font-family: "Segoe WP N";
+  padding-left: 1vw;
+}
+.middle-block p {
+  width: 253px;
+  height: 67px;
+  font-size: 14px;
+  color: #909090;
+  font-family: "Segoe WP N";
+  text-align: center;
+}
+
+.down-block {
+  display: flex;
+  justify-content: space-around;
+}
+.down-block span {
+  font-size: 42px;
+  line-height: 150px;
+  color: #6f7173;
+  font-family: "Segoe WP N";
+}
+
+.text-produkt {
+font-size: 15px;
+line-height: 36px;
+color: #909090;
+font-family: "Segoe WP N";
+font-weight: 300;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 36px;
+  color: #909090;
+  font-family: "Segoe WP N";
+  font-weight: 300;
+}
+/* ----------------------конец слайдера---------------------- */
+
+/* --------------middle block with three blocks start ------------------- */
+
+/* --------------middle block with three blocks start ------------------- */
