@@ -1,34 +1,145 @@
 /* ------------------head начало-------------------- */
-.logo {
+.head {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   float: left;
   margin-left: 15%;
+  height: 10vh;
 }
-            /* ------кнопки в head начало------ */
-.buttons {
+.head span {
+  font-size: 49px;
+  color: #000000;
+  font-family: "Segoe WP";
+}
+.logo {
+  background-image: url(..//img/Shape-1.png);
+  background-repeat: no-repeat;
+  width: 51px;
+  height: 51px;
+}
+.logo img {
+  display: block;
+  margin: 0 auto;
+}
+/* ------кнопки в head начало------ */
+/* .buttons {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
   margin-left: 50%;
   margin-right: 5%;
-}
+} */
 .item {
   padding: 20px 0px;
 }
-              /* ------кнопки в head конец------ */
+
+/* -----гамбургер меню начало----- */
+
+.section {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50vw;
+}
+/* .menu-btn {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%; margin-top: -1px;
+  left: 50%; margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  display: block;
+  transition: 0.2s;
+}
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+
+.menu-btn_active span:before {
+  transform: rotate(-35deg);
+  width: 10px;
+  transform-origin: left bottom;
+}
+.menu-btn_active span:after {
+  transform: rotate(35deg);
+  width: 10px;
+  transform-origin: left top;
+} */
+.menu-block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-nav a {
+  position: inherit;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 3vw;
+  transition: 1s;
+}
+.menu-nav a:hover {
+  box-shadow: inset 0px -5px 0px 0px #5094f2;
+}
+/* .menu-nav {
+  transition: 0.2s;
+  transform: scaleX(1) translateX(0%);
+  transform-origin: right center;
+  opacity: 1;
+  
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: -25px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+} */
+/* .menu-nav_active {
+  transform: scaleX(1) translateX(0%);
+  opacity: 1;
+  visibility: visible;
+} */
+/* .section {
+  display: none;
+} */
+/* -----гамбургер меню конец------ */
+
+/* ------кнопки в head конец------ */
 /* -----------------head end------------------ */
 /* ------------------начало слайдера------------------- */
 .single-slide {
   background-image: url(../img/slider-backgound.png);
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .iphone {
   position: absolute;
   z-index: 1;
-  margin-left: 22vw;
+  margin-left: 10vw;
   margin-top: 3vh;
 }
 .sl-slider {
@@ -39,19 +150,19 @@
 .text-slider {
   margin-top: 15vh;
 }
-.big-text-slider{
-  font-family: 'Roboto', sans-serif;
+.big-text-slider {
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 200;
   color: #ffffff;
 }
 .smal-text-slider {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 50;
   color: #ffffff;
 }
-          /* ----- button sing un now start------ */
+/* ----- button sing un now start------ */
 .button a {
   text-decoration: none;
   outline: none;
@@ -62,11 +173,12 @@
   border: 1px solid #5094f2;
   /* border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082); */
   border-image-slice: 1;
-  margin: 10px 0px;   font-family: 'Montserrat', sans-serif;
+  margin: 10px 0px;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   letter-spacing: 2px;
-  transition: .8s cubic-bezier(.165,.84,.44,1);
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .button a:before {
@@ -79,16 +191,18 @@
   z-index: -1;
   color: white;
   background: #5094f2;
-  transition: .8s cubic-bezier(.165,.84,.44,1);
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-a:hover {background: rgba(255,255,255,0);}
+a:hover {
+  background: rgba(255, 255, 255, 0);
+}
 a:hover:before {
   bottom: 0%;
   top: auto;
   height: 100%;
 }
-            /* ----- button sing un now end------ */
-
+/* ----- button sing un now end------ */
+/* -------средний блок начало------ */
 .middle-block {
   display: flex;
   justify-content: space-evenly;
@@ -98,27 +212,31 @@ a:hover:before {
   display: block;
   margin: 25% auto;
 }
-.m-block-blue, .m-block-red, .m-block-yellow  {
+.m-block-blue,
+.m-block-red,
+.m-block-yellow {
   border-radius: 50%;
   height: 185px;
   width: 185px;
-  z-index: 9;
+  margin-bottom: 12vh;
 }
 .m-block-blue {
-  background-color: #5094f2; 
+  background-image: url(..//img/blue-shape.png);
 }
 .m-block-red {
-  background-color: #d94748;
+  background-image: url(..//img/red-shape.png);
 }
 .m-block-yellow {
-  background-color: #ebbb11;
+  background-image: url(..//img/yellow-shape.png);
 }
+
 .middle-block span {
   font-size: 20px;
   line-height: 44px;
   color: #5094f2;
   font-family: "Segoe WP N";
   padding-left: 1vw;
+  display: inline-block;
 }
 .middle-block p {
   width: 253px;
@@ -127,6 +245,7 @@ a:hover:before {
   color: #909090;
   font-family: "Segoe WP N";
   text-align: center;
+  display: inline-block;
 }
 
 .down-block {
@@ -141,13 +260,13 @@ a:hover:before {
 }
 
 .text-produkt {
-font-size: 15px;
-line-height: 36px;
-color: #909090;
-font-family: "Segoe WP N";
-font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  color: #909090;
+  font-family: "Segoe WP N";
+  font-weight: 300;
 }
-
+/* -------средний блок конец------ */
 .footer {
   display: flex;
   justify-content: center;
@@ -162,3 +281,88 @@ font-weight: 300;
 /* --------------middle block with three blocks start ------------------- */
 
 /* --------------middle block with three blocks start ------------------- */
+
+/* 
+.section {
+  height: 100vh;
+  background-color: #7b1fa2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%; margin-top: -1px;
+  left: 50%; margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  display: block;
+  transition: 0.2s;
+}
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+
+.menu-btn_active span:before {
+  transform: rotate(-35deg);
+  width: 10px;
+  transform-origin: left bottom;
+}
+.menu-btn_active span:after {
+  transform: rotate(35deg);
+  width: 10px;
+  transform-origin: left top;
+}
+.menu-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-nav a {
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 100;
+  display: inline-block;
+  margin-right: 20px;
+  transition: 1s;
+}
+.menu-nav {
+  transition: 0.2s;
+  transform: scaleX(0) translateX(0%);
+  transform-origin: right center;
+  opacity: 0;
+  visibility: hidden;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: -25px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.menu-nav_active {
+  transform: scaleX(1) translateX(0%);
+  opacity: 1;
+  visibility: visible;
+} */
